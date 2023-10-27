@@ -1,0 +1,23 @@
+# The fortran modules provided by this target.
+provides
+ pisces_aggregation.mod
+ pisces_calcite_dissolution.mod
+ pisces_carbonate_chemistry.mod
+ pisces_daylength.mod
+ pisces_dom_remineralization.mod
+ pisces_dust.mod
+ pisces_iron.mod
+ pisces_model_library.mod
+ pisces_nitrification.mod
+ pisces_nitrogen_fixation.mod
+ pisces_optics.mod
+ pisces_oxygen.mod
+ pisces_phytoplankton.mod
+ pisces_pom.mod
+ pisces_sediment.mod
+ pisces_shared.mod
+ pisces_shear.mod
+ pisces_silica_dissolution.mod
+ pisces_tracer.mod
+ pisces_turbocline.mod
+ pisces_zooplankton.mod

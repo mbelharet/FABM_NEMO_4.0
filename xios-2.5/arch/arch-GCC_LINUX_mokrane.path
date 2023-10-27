@@ -1,0 +1,12 @@
+# Made by nbarrier.
+# Compilation of the XIOS library using gcc MPI compilers and parallel NetCDF
+
+# setting the NETCDF library flags
+NETCDF_INCDIR="-I$NETCDF_INC_DIR"
+NETCDF_LIBDIR="-L$NETCDF_LIB_DIR"
+NETCDF_LIB="-lnetcdff -lnetcdf"
+
+# setting the HDF5 library flags
+HDF5_INCDIR="-I $HDF5_INC_DIR"
+HDF5_LIBDIR="-L $HDF5_LIB_DIR"
+HDF5_LIB="-lhdf5_hl -lhdf5 -lz"

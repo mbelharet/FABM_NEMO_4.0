@@ -1,0 +1,31 @@
+################################################################################
+###################                Projet XIOS               ###################
+################################################################################
+
+
+# Made by mbelharet.
+# Compilation of the XIOS library using gcc MPI compilers and parallel NetCDF
+ 
+%CCOMPILER      mpicc
+%FCOMPILER      mpif90
+%LINKER         mpif90  
+
+# The CXX11 option must be used with gcc5 
+%BASE_CFLAGS    -ansi -w -D_GLIBCXX_USE_CXX11_ABI=0
+%PROD_CFLAGS    -O3 -DBOOST_DISABLE_ASSERTS
+%DEV_CFLAGS     -g -O2 
+%DEBUG_CFLAGS   -g 
+
+%BASE_FFLAGS    -D__NONE__ 
+%PROD_FFLAGS    -O3
+%DEV_FFLAGS     -g -O2
+%DEBUG_FFLAGS   -g 
+
+%BASE_INC       -D__NONE__  
+# -Wl,-rpath -Wl,/home/nbarrier/Libs/netcdf_par/lib forces XIOS to use the proper library 
+# at runtime (prevents setting LD_LIBRARY_PATH at runtime)
+%BASE_LD        -lstdc++
+
+%CPP            cpp
+%FPP            cpp -P
+%MAKE           make
